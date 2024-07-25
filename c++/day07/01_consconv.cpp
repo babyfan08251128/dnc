@@ -19,9 +19,17 @@ class Dog
 public:
     Dog(const char* name):m_name(name)
     {
+        
+    }
+
+    explicit Dog(const Cat& c):m_name(c.name){
 
     }
 
+    void talk()
+    {
+        cout << m_name << ": 汪汪~~~" << endl;
+    }
 private:
     string m_name;
 };
