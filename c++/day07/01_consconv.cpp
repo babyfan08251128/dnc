@@ -22,7 +22,7 @@ public:
         
     }
 
-    explicit Dog(const Cat& c):m_name(c.name){
+    explicit Dog(const Cat& c):m_name(c.m_name){
 
     }
 
